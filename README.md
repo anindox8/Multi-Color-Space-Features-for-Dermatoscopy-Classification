@@ -1,4 +1,4 @@
-# The <font face="Times New Roman">*Classical*</font> Approach: Color Features with Support Vector Machine and Random Forest
+# The <font face="times">*Classical*</font> Approach: Color Features with Support Vector Machine and Random Forest
 **Problem Statement**: Fully supervised binary classification of skin lesions from dermatoscopic images. 
 
 **Data**: *Class A*: Nevus; *Class B:* Other (Melanoma, Dermatofibroma, Pigmented Bowen's, Basal Cell Carcinoma, Vascular, Pigmented Benign Keratoses). 
