@@ -11,7 +11,7 @@
 
 
 ## Color Constancy  
-![Color Constancy](./reports/images/pre_wbcc.png)
+![Color Constancy](reports/images/pre_wbcc.png)
    
     
 ## Occlusion Removal  
