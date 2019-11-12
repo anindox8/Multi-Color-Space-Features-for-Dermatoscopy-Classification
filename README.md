@@ -11,6 +11,8 @@
 
 
 ## Color Constancy  
+  
+  
 ![Color Constancy](reports/images/pre_wbcc.png)
    
     
