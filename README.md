@@ -9,8 +9,8 @@
   ● Unsupervised Segmentation Functions: `scripts/segment.py`  
   ● Feature Computation Functions: `scripts/colorfeatures.py`               
   ● Final Feature Extraction Function: `scripts/feature_extraction.py`               
-  ● Classifier Support Functions: `scripts/classify.py` 
-  ● Inference Pipeline Notebook: `scripts/predict.ipynb` 
+  ● Classifier Support Functions: `scripts/classify.py`  
+  ● Inference Pipeline Notebook: `scripts/predict.ipynb`  
   ● Training-Validation Pipeline Notebook: `scripts/train-val.ipynb` 
 
 
