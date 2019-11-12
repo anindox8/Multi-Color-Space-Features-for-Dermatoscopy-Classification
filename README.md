@@ -12,37 +12,37 @@
 
 ## Color Constancy  
 
-![Color_Constancy](reports/images/pre_wbcc.png) 
+![Color Constancy](reports/images/pre_wbcc.png) 
    
     
 ## Occlusion Removal  
 
-![Hair_Removal](reports/images/occlusion_clahe.png) 
+![Hair Removal](reports/images/occlusion_clahe.png) 
   
     
 ## Unsupervised Segmentation 
 
-![Unsupervised_Segmentation](reports/images/segmentation_ac.png) 
+![Unsupervised Segmentation](reports/images/segmentation_ac.png) 
 
 
 ## Color Space 
-![Color_Space](reports/images/colorspace.png) 
+![Color Space](reports/images/colorspace.png) 
 
 
 ## Gabor Filter Features
-![Gabor_Filter_Features](reports/images/gabor.png) 
+![Gabor Filter Features](reports/images/gabor.png) 
 
 
 ## HOG Features 
-![HOG_Features](reports/images/hog.png) 
+![HOG Features](reports/images/hog.png) 
 
 
 ## Feature Selection
 
-![Feature_Selection](reports/images/feature_selection.png) 
+![Feature Selection](reports/images/feature_selection.png) 
 
 
 ## Experimental Results
 
-![Experimental_Results](reports/images/results.png) 
+![Experimental Results](reports/images/results.png) 
 
