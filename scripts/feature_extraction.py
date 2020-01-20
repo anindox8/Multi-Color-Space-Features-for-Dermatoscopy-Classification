@@ -29,11 +29,11 @@ def extract_features(image,mask=None):
     circa_mask            = create_circular_mask(image.shape[0], image.shape[1], radius = 300).astype(bool)
     
     masked_lesion_GL      = np.ma.array(np.multiply(img_GL,    circa_mask)  ,mask=~circa_mask)
-    masked_lesion_RGB     = np.ma.array(np.multiply(img_RGB,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_HSV     = np.ma.array(np.multiply(img_HSV,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_LAB     = np.ma.array(np.multiply(img_LAB,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_YCrCb   = np.ma.array(np.multiply(img_YCrCb, np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_luv     = np.ma.array(np.multiply(img_luv,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_RGB     = np.ma.array(np.multiply(img_RGB,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_HSV     = np.ma.array(np.multiply(img_HSV,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_LAB     = np.ma.array(np.multiply(img_LAB,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_YCrCb   = np.ma.array(np.multiply(img_YCrCb, np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_luv     = np.ma.array(np.multiply(img_luv,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
     #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
@@ -46,11 +46,11 @@ def extract_features(image,mask=None):
     img_ccluv             = cv2.cvtColor(img_RGB, cv2.COLOR_RGB2Luv)
     
     masked_lesion_ccGL    = np.ma.array(np.multiply(img_ccGL,    circa_mask)  ,mask=~circa_mask)
-    masked_lesion_ccRGB   = np.ma.array(np.multiply(img_ccRGB,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_ccHSV   = np.ma.array(np.multiply(img_ccHSV,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_ccLAB   = np.ma.array(np.multiply(img_ccLAB,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_ccYCrCb = np.ma.array(np.multiply(img_ccYCrCb, np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_ccluv   = np.ma.array(np.multiply(img_ccluv,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_ccRGB   = np.ma.array(np.multiply(img_ccRGB,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_ccHSV   = np.ma.array(np.multiply(img_ccHSV,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_ccLAB   = np.ma.array(np.multiply(img_ccLAB,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_ccYCrCb = np.ma.array(np.multiply(img_ccYCrCb, np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_ccluv   = np.ma.array(np.multiply(img_ccluv,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
     
     
     img_mxRGB             = (correct_image(image, grey_edge(image, njet=0, mink_norm=-1, sigma=0))*255).astype(np.uint8)
@@ -61,11 +61,11 @@ def extract_features(image,mask=None):
     img_mxluv             = cv2.cvtColor(img_RGB, cv2.COLOR_RGB2Luv)
     
     masked_lesion_mxGL    = np.ma.array(np.multiply(img_mxGL,    circa_mask)  ,mask=~circa_mask)
-    masked_lesion_mxRGB   = np.ma.array(np.multiply(img_mxRGB,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_mxHSV   = np.ma.array(np.multiply(img_mxHSV,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_mxLAB   = np.ma.array(np.multiply(img_mxLAB,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_mxYCrCb = np.ma.array(np.multiply(img_mxYCrCb, np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
-    masked_lesion_mxluv   = np.ma.array(np.multiply(img_mxluv,   np.dstack((circa_mask,circa_mask,circa_mask)))  ,mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_mxRGB   = np.ma.array(np.multiply(img_mxRGB,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_mxHSV   = np.ma.array(np.multiply(img_mxHSV,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_mxLAB   = np.ma.array(np.multiply(img_mxLAB,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_mxYCrCb = np.ma.array(np.multiply(img_mxYCrCb, np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
+    masked_lesion_mxluv   = np.ma.array(np.multiply(img_mxluv,   np.dstack((circa_mask,circa_mask,circa_mask))), mask=~np.dstack((circa_mask,circa_mask,circa_mask)))
     #-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
     
     
