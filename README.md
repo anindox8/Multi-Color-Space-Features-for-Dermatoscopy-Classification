@@ -1,6 +1,8 @@
 # Color/Texture Features with Support Vector Machine and Random Forest
 **Problem Statement**: Fully supervised binary classification of skin lesions from dermatoscopic images. 
 
+**Note**: The following approach won 1st place at the **2019 Computer-Aided Diagnosis: Machine Learning in Dermascopy Challenge** at [Universitat de Girona](https://www.udg.edu), during the 2018-20 Joint Master of Science in [Medical Imaging and Applications (MaIA)](https://maiamaster.udg.edu) program.  
+
 **Data**: *Class A*: Nevus; *Class B:* Other (Melanoma, Dermatofibroma, Pigmented Bowen's, Basal Cell Carcinoma, Vascular, Pigmented Benign Keratoses) [4800/1200/1000 : Train/Val/Test Ratio]
  
 **Directories**  
